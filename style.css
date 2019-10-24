@@ -1,17 +1,18 @@
 body {
-height: 100%;
-width: 100%;
 margin: 0px;
 padding: 0px;
-font-family: 'Cormorant', serif;
+font-family: 'Muli', sans-serif;
+background-color: #1a1a1a;
+color: white;
 }
 
 .navbar{
 position: fixed;
 width: 100%;
 background-color: black;
-height: 120px;
 margin: 0px;
+display: flex;
+
 
 }
 
@@ -24,13 +25,23 @@ text-decoration: none;
 font-size: 20px;
 width: 30%;
 text-align: center;
-font-family: 'Cormorant', serif;
   }
 
 #name {
-font-size: 60px;
+font-size: 300%;
 padding-top: 17px;
 
+}
+
+.homepage {
+  background-color: black;
+  height: 100%;
+}
+
+#titleimage {
+  width: 40%;
+  padding-left: 30%;
+  margin-top: 150px;
 }
 
 h1 {
@@ -53,9 +64,48 @@ margin-left: auto;
 margin-right: auto;
 padding: 20px;
 }
-p {
+ .content p {
 text-align: center;
-padding-left: 400px;
-padding-right: 400px;
+padding-left: 20%;
+padding-right: 20%;
 font-size: 20px;
+}
+
+
+#guess {
+  margin-left: 41%;
+}
+
+.feedback {
+  padding-top: 10%;
+  padding-left: 42%;
+}
+
+@media (max-width: 850px){
+
+  #name {
+    font-size: 250%;
+  }
+}
+
+@media (max-width: 769px){
+
+  #guess {
+    margin-left: 25%;
+  }
+
+  .feedback {
+
+    padding-left: 25%;
+  }
+
+  #name {
+    font-size: 200%;
+  }
+
+  #titleimage {
+    width: 50%;
+    padding-left: 25%;
+    margin-top: 200px;
+  }
 }
